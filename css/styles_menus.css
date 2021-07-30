@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(/font/Shrikhand-Regular.otf);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src:url(/font/Roboto-Regular.ttf)
+}
+
+body{
+    margin: 0;
+    font-family: 'roboto';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.header__arrow{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-arrow-left{
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.image__plate{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menus{
+    background-color: #f6f6f6;
+   padding: 20px;
+   margin-top: -60px;
+   overflow: overlay;
+   border-radius: 20px 20px 0 0;
+}
+
+.menu__header__title{
+    font-family: 'shrikhand';
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.menu__card__description{
+    border: 2px solid #f3f3f3;
+    background-color: white;
+    border-radius: 25px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.menu__card__dish{
+    margin-bottom: 0;
+}
+
+.menu__card__ingredients{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu__card__ingredient{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.menu__card__price{
+    margin-top: 2px;
+    margin-right: 40px;
+}
+
+.footer{
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+    background-color: black;
+}
+
+.footer__logo{
+    font-family: 'shrikhand';
+}
+
+.footer__nav__title{
+color: white;
+}
+
+.fa-utensils, .fa-hands-helping{
+    margin-right: 10px;
+}
+
+.footer__contact{
+    color: white;
+}

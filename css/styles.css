@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(/font/Shrikhand-Regular.otf);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src:url(/font/Roboto-Regular.ttf)
+}
+
+body{
+    margin: 0;
+    font-family: 'roboto';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.location{
+    text-align: center;
+}
+
+.location__city{
+    background-color: #DADADA;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+    
+}
+
+.fa-map-marker-alt{
+    padding-right: 15px;
+}
+
+.presentation{
+    background-color:#f6f6f6;
+}
+
+.presentation__description{
+    padding-top: 20px;
+    padding-bottom:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+}
+
+.presentation__title{
+    text-align: center;
+}
+
+.presentation__paragraph{
+    text-align: center;
+}
+
+.presentation__button{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #FF79DA;
+    background-color: #FF79DA;
+    border-radius: 30px;
+    width: 70%;
+}
+
+.method{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.method__title{
+    margin-left: 15px;
+}
+
+.method__elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.method__element{
+    display:flex;
+}
+
+.method__number{
+    background-color: #9356DC;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 9px 5px 9px;
+    position: relative;
+    top: 34px;
+    height: 18px;
+    left: 13px;
+}
+
+.method__description{
+    border: 2px solid #F6F6F6;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #F6F6F6;
+    box-shadow: 0 0 10px;
+    width: 265px;
+    margin-right: 20px;
+}
+
+.fa-mobile-alt, .fa-list-ul, .fa-store{
+    margin-right: 20px;
+}
+
+.restaurants{
+    background-color:#f6f6f6;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.restaurant__figure{
+    margin:0;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius:20px;
+    box-shadow: 0 0 10px 0;
+}
+
+.restaurant__image{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 180px;
+    object-fit: cover;
+}
+
+.restaurant__figcaption{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.restaurant__name{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+.restaurant__location{
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.footer{
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+    background-color: black;
+}
+
+.footer__logo{
+    font-family: 'shrikhand';
+}
+
+.footer__nav__title{
+color: white;
+}
+
+.fa-utensils, .fa-hands-helping{
+    margin-right: 10px;
+}
+
+.footer__contact{
+    color: white;
+}
