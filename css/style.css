@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../font/Shrikhand-Regular.otf");
+}
+body {
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

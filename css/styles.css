@@ -16,6 +16,7 @@ body{
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .header{
@@ -34,8 +35,6 @@ a{
     padding-top: 20px;
 }
     
-}
-
 .fa-map-marker-alt{
     padding-right: 15px;
 }
@@ -52,7 +51,6 @@ a{
     align-items: center;
 }
     
-}
 
 .presentation__title{
     text-align: center;
@@ -69,6 +67,7 @@ a{
     background-color: #FF79DA;
     border-radius: 30px;
     width: 70%;
+    
 }
 
 .method{
@@ -125,11 +124,15 @@ a{
 .restaurant__figure{
     margin:0;
     width: 100%;
-    height: 250px;
+    height: 265px;
     margin-bottom: 20px;
     background-color: white;
     border-radius:20px;
     box-shadow: 0 0 10px 0;
+}
+
+.restaurant__card :hover{
+  
 }
 
 .restaurant__image{
@@ -153,6 +156,45 @@ a{
 .restaurant__location{
     margin-top: 0;
     font-size: 1.2em;
+}
+
+.restaurant__new{
+    background-color: #99E2D0;
+    position: absolute;
+    top: 905px;
+    right: 40px;
+    padding: 10px 20px;
+}
+
+.restaurant__new2{
+    background-color: #99E2D0;
+    position: absolute;
+    top: 1190px;
+    right: 40px;
+    padding: 10px 20px;
+
+}
+
+.fa-heart{
+    position: absolute;
+    right: 40px;
+    font-size: 30px;
+}
+
+.love1{
+    top:1105px;
+}
+
+.love2{
+    top: 1390px;
+}
+
+.love3{
+    top : 1675px
+}
+
+.love4{
+    top : 1960px    
 }
 
 .footer{
