@@ -19,6 +19,9 @@ a{
     cursor: pointer;
 }
 
+h3{
+    font-weight: lighter;
+}
 .header{
     margin-top: 20px;
     text-align: center;
@@ -64,11 +67,25 @@ a{
     display: flex;
     justify-content: center;
     border: 2px solid #FF79DA;
-    background-color: #FF79DA;
+    background:linear-gradient(to bottom right,#FF79DA,#9356DC);
+    color: white;
     border-radius: 30px;
-    width: 70%;
+    width:250px;
+    cursor: pointer;
+    box-shadow :  0px  0px  8px  0px  rgba(0, 0, 0, 0.4);
     
 }
+
+.presentation__button:hover{
+
+    opacity:0.7 ;
+    box-shadow :  0px  0px  8px  0px  rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    
+    
+}
+
+
 
 .method{
     display: flex;
@@ -94,7 +111,7 @@ a{
     background-color: #9356DC;
     border-radius: 15px;
     color: white;
-    padding: 5px 9px 5px 9px;
+    padding: 3px 9px 5px 9px;
     position: relative;
     top: 34px;
     height: 18px;
@@ -128,7 +145,7 @@ a{
     margin-bottom: 20px;
     background-color: white;
     border-radius:20px;
-    box-shadow: 0 0 10px 0;
+    box-shadow :  0px  0px  8px  0px  rgba(0, 0, 0, 0.4);
 }
 
 .restaurant__card :hover{
@@ -190,11 +207,11 @@ a{
 }
 
 .love3{
-    top : 1675px
+    top :1675px;
 }
 
 .love4{
-    top : 1960px    
+    top:1960px;   
 }
 
 .footer{
