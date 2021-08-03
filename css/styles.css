@@ -32,10 +32,12 @@ h3{
 }
 
 .location__city{
-    background-color: #DADADA;
+    background-color: #eaeaea;
     padding-bottom: 20px;
     margin-bottom: 0;
     padding-top: 20px;
+    border-top: 2px solid #eaeaea;
+    box-shadow: 0px 0 10px #9e9e9e;
 }
     
 .fa-map-marker-alt{
@@ -48,7 +50,7 @@ h3{
 
 .presentation__description{
     padding-top: 20px;
-    padding-bottom:30px;
+    padding-bottom:60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,16 +59,18 @@ h3{
 
 .presentation__title{
     text-align: center;
+    margin-bottom: 0;
 }
 
 .presentation__paragraph{
     text-align: center;
+    font-size: 1.3em;
+    padding-bottom: 20px;
 }
 
 .presentation__button{
     display: flex;
     justify-content: center;
-    border: 2px solid #FF79DA;
     background:linear-gradient(to bottom right,#FF79DA,#9356DC);
     color: white;
     border-radius: 30px;
@@ -94,7 +98,7 @@ h3{
 }
 
 .method__title{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .method__elements{
@@ -121,6 +125,7 @@ h3{
 .method__description{
     border: 2px solid #F6F6F6;
     border-radius: 20px;
+    font-weight: bold;
     padding: 20px;
     background-color: #F6F6F6;
     box-shadow: 0 0 10px;
@@ -176,17 +181,21 @@ h3{
 }
 
 .restaurant__new{
+    color :#069251;
     background-color: #99E2D0;
+    font-weight: bold;
     position: absolute;
-    top: 905px;
+    top: 955px;
     right: 40px;
     padding: 10px 20px;
 }
 
 .restaurant__new2{
+    color :#069251;
     background-color: #99E2D0;
+    font-weight: bold;
     position: absolute;
-    top: 1190px;
+    top: 1240px;
     right: 40px;
     padding: 10px 20px;
 
@@ -199,19 +208,19 @@ h3{
 }
 
 .love1{
-    top:1105px;
+    top:1160px;
 }
 
 .love2{
-    top: 1390px;
+    top: 1445px;
 }
 
 .love3{
-    top :1675px;
+    top :1730px;
 }
 
 .love4{
-    top:1960px;   
+    top:2015px;   
 }
 
 .footer{
