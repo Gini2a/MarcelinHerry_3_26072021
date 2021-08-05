@@ -26,6 +26,12 @@
     cursor: pointer;
 }
 
+
+
+
+  
+
+
 body{
     margin: 0;
     font-family: 'roboto';
@@ -144,6 +150,10 @@ h3{
     padding-bottom: 30px;
 }
 
+.restaurant__card{
+    position: relative;
+}
+
 .restaurant__figure{
     margin:0;
     width: 100%;
@@ -182,43 +192,21 @@ h3{
     background-color: #99E2D0;
     font-weight: bold;
     position: absolute;
-    top: 955px;
-    right: 40px;
+    top: 5px;
+    right: 15px;
     padding: 10px 20px;
-}
-
-.restaurant__new2{
-    color :#069251;
-    background-color: #99E2D0;
-    font-weight: bold;
-    position: absolute;
-    top: 1240px;
-    right: 40px;
-    padding: 10px 20px;
-
 }
 
 .fa-heart{
     position: absolute;
-    right: 40px;
+   
+}
+
+.love{
+    top:200px;
+    right: 30px;
     font-size: 30px;
-}
-
-.love1{
-    top:1160px;
-}
-
-.love2{
-    top: 1445px;
-}
-
-.love3{
-    top :1730px;
-}
-
-.love4{
-    top:2015px;   
-}
+}  
 
 .footer{
     padding-bottom: 40px;
@@ -242,4 +230,101 @@ color: white;
 
 .footer__contact{
     color: white;
+}
+
+@media screen and (min-width:800px)and (max-width: 1068px){
+
+
+    body{
+     margin: auto;
+    }
+
+    .method__title {
+    margin-left: 0;
+    text-align: center;
+}
+
+ .method__elements { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ }
+    
+ .restaurants__title{
+    text-align: center;
+ }
+
+ .restaurants__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        .restaurant__card{
+            width: 50%;
+        }
+}
+.restaurant__figure{
+    width: 98%;
+}
+
+.footer__navs{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+}
+
+@media screen and (min-width:1069px) {
+    body{
+        margin: auto;
+       }
+   
+       .method__title {
+       margin-left: 0;
+       text-align: center;
+   }
+   
+    .method__elements { 
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-around;
+    }
+       
+    .restaurants__title{
+       text-align: center;
+    }
+   
+    .restaurants__cards{
+        max-width: 1440px;
+        margin: auto;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+           .restaurant__card{
+               width: 50%;
+           }
+   }
+   .restaurant__figure{
+       width: 98%;
+       height: 325px;
+       .restaurant__image{
+           height: 240px;
+
+       }
+   }
+   .love{
+       top: 255px;
+   }
+
+   .footer__navs{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 }
