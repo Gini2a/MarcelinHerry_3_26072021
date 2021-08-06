@@ -48,6 +48,12 @@ a {
 .menus .menu {
   padding-bottom: 50px;
 }
+.menus .menu__card {
+  margin-bottom: 60px;
+}
+.menus .menu__card__dishes {
+  margin-bottom: 35px;
+}
 
 .menu__header__title {
   font-family: "shrikhand";
@@ -99,7 +105,7 @@ a {
 .menu-order {
   display: flex;
   justify-content: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .menu-order .menu-order__button {
   width: 210px;
@@ -153,6 +159,40 @@ a {
 
 .footer__contact {
   color: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .image__plate {
+    height: 385px;
+  }
+
+  .menus {
+    margin-top: -20px;
+  }
+
+  .menu__header__title {
+    justify-content: center;
+  }
+
+  .fa-heart {
+    margin-left: 20px;
+  }
+
+  .menu__card {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .menu-order {
+    padding-bottom: 0;
+  }
+
+  .footer__navs {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

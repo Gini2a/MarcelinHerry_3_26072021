@@ -27,10 +27,32 @@
 }
 
 
+.spinner {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/images/logo/spinner.gif);
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 150px;
+    opacity: 75%;
+    z-index: 1;
+    animation: spinner 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
 
-
-  
-
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        opacity: 0.75;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
 
 body{
     margin: 0;
@@ -196,16 +218,13 @@ h3{
     right: 15px;
     padding: 10px 20px;
 }
-
-.fa-heart{
-    position: absolute;
-   
-}
-
+ 
 .love{
+    position: absolute;
     top:200px;
     right: 30px;
     font-size: 30px;
+    cursor: pointer;
 }  
 
 .footer{
