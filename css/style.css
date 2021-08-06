@@ -9,27 +9,55 @@
 .spinner {
   position: fixed;
   width: 100%;
-  min-height: 100vh;
-  background-image: url(/images/logo/spinner.gif);
+  height: 100%;
   background-color: #f6f6f6;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 150px;
-  opacity: 75%;
+  opacity: 0.8;
   z-index: 1;
-  animation: spinner 3s;
-  animation-delay: 3s;
+  animation: spinner 4s linear;
   animation-fill-mode: forwards;
+}
+
+.spinner__element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid transparent;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-left: 10px solid #99E2D0;
+  border-right: 10px solid #99E2D0;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spinner__element 4s linear;
+  visibility: hidden;
 }
 
 @keyframes spinner {
   0% {
     visibility: visible;
-    opacity: 0.75;
+    opacity: 0.8;
   }
   100% {
     visibility: hidden;
     opacity: 0;
+  }
+}
+@keyframes spinner__element {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
   }
 }
 body {
@@ -48,7 +76,7 @@ h3 {
 }
 
 .header {
-  margin-top: 20px;
+  padding-top: 20px;
   text-align: center;
 }
 
