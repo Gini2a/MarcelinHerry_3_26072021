@@ -99,7 +99,6 @@ a{
 }
 
 
-
 .menu__card__description{
     position: relative;
     border: 2px solid #f3f3f3;
@@ -108,21 +107,49 @@ a{
     padding-left: 10px;
     margin-bottom: 20px;
     height: 70px;
+        &:hover .menu__card__price{
+            padding-right: 80px;
+        }
+        &:hover .btn__check{
+            display: initial;
+            animation : slide 0.5s ease;
+            transform-origin: right;
+            cursor: pointer;
+        }
+        .btn__check{
+            position: absolute;
+            right: 0;
+            background:$colour-tertiary;
+            padding: 20px;
+            border-radius: 0 15px 15px 0;
+            top: 0;
+            height: 31px;
+            display: none;
+            .fa-check-circle{
+                color: white;
+                font-size: 35px;
+                animation: rotation 0.5s;
+            }
+        }
+    }
+    
+
+    @keyframes slide{
+        0%{
+            transform: scaleX(0);    
+        }
+        100%{
+            transform: scaleX(-50px);
+        }
     }
 
-    .btn__check{
-        position: absolute;
-        right: 0;
-        background:$colour-tertiary;
-        padding: 20px;
-        border-radius: 0 15px 15px 0;
-        top: 0;
-        height: 31px;
-        display: none;
-    }
-
-    .fa-check-circle{
-        color: white;
+    @keyframes rotation{
+        0%{
+            transform: rotate(0);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
     }
 
 .menu__card__title{
@@ -144,6 +171,7 @@ a{
         display: flex;
         justify-content: space-between;
         margin-top: 2px;
+
     }   
     .menu__card__price{
         margin-top: 2px;
@@ -224,6 +252,8 @@ color: white;
 }
 
 .menu__card{
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
