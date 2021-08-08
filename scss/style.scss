@@ -33,7 +33,7 @@
     height: 100%;
     background-color:#f6f6f6;
     opacity: 0.8;
-    z-index: 1;
+    z-index: 2;
     animation: spinner 4s linear;
     animation-fill-mode: forwards;
 }
@@ -183,6 +183,7 @@ h3{
     top: 34px;
     height: 18px;
     left: 13px;
+    z-index: 1;
 }
 
 .method__description{
@@ -194,6 +195,9 @@ h3{
     box-shadow: 0 0 10px;
     width: 265px;
     margin-right: 20px;
+    &:hover{
+        @include hover-btn;
+    }
 }
 
 .fa-mobile-alt, .fa-list-ul, .fa-store{
@@ -259,6 +263,15 @@ h3{
     right: 30px;
     font-size: 30px;
     cursor: pointer;
+    transition: 500ms;
+    &:hover{
+        transform: scale(1.1);
+        font-weight: bold;
+        background: $gradient;
+        -webkit-background-clip:text;
+        background-clip: text;
+        color:transparent;
+    }
 }
 
 .footer{
@@ -280,9 +293,11 @@ color: white;
 .fa-utensils, .fa-hands-helping{
     margin-right: 10px;
 }
-
-.footer__contact{
+.footer__nav{
+    cursor: pointer;
+    .footer__contact{
     color: white;
+    }
 }
 
 @media screen and (min-width:800px)and (max-width: 1068px){
@@ -376,7 +391,7 @@ color: white;
 
    .footer__navs{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
 }
 

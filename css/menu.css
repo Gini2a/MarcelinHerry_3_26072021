@@ -6,6 +6,17 @@
   font-family: "roboto";
   src: url(../font/Roboto-Regular.ttf);
 }
+.btn__check {
+  position: absolute;
+  right: 0;
+  background: #99E2D0;
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
+  top: 0;
+  height: 31px;
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: "roboto";
@@ -66,16 +77,40 @@ a {
 .love {
   font-size: 30px;
   cursor: pointer;
+  transition: 500ms;
+}
+.love:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .menu__card__description {
+  position: relative;
   border: 2px solid #f3f3f3;
   background-color: white;
   border-radius: 25px;
   padding-left: 10px;
   margin-bottom: 20px;
+  height: 70px;
+}
+.menu__card__description:hover .btn__check {
+  display: initial;
+  animation: slide 1s ease;
+  transform-origin: right;
 }
 
+@keyframes slide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(-50px);
+  }
+}
 .menu__card__title {
   font-weight: normal;
   font-size: 1.1em;
@@ -158,7 +193,10 @@ a {
   margin-right: 10px;
 }
 
-.footer__contact {
+.footer__nav {
+  cursor: pointer;
+}
+.footer__nav .footer__contact {
   color: white;
 }
 
@@ -184,6 +222,13 @@ a {
     justify-content: space-around;
     margin-bottom: 50px;
   }
+  .menu__card .menu__card__dishes {
+    width: 32%;
+  }
+
+  .menu__card__ingredients .menu__card__price {
+    margin-right: 20px;
+  }
 
   .menu-order {
     padding-bottom: 0;
@@ -191,7 +236,7 @@ a {
 
   .footer__navs {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
   }
 }
