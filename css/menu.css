@@ -6,17 +6,6 @@
   font-family: "roboto";
   src: url(../font/Roboto-Regular.ttf);
 }
-.btn__check {
-  position: absolute;
-  right: 0;
-  background: #99E2D0;
-  padding: 20px;
-  border-radius: 0 15px 15px 0;
-  top: 0;
-  height: 31px;
-  display: none;
-}
-
 body {
   margin: 0;
   font-family: "roboto";
@@ -97,20 +86,22 @@ a {
   margin-bottom: 20px;
   height: 70px;
 }
-.menu__card__description:hover .btn__check {
-  display: initial;
-  animation: slide 1s ease;
-  transform-origin: right;
+
+.btn__check {
+  position: absolute;
+  right: 0;
+  background: #99E2D0;
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
+  top: 0;
+  height: 31px;
+  display: none;
 }
 
-@keyframes slide {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(-50px);
-  }
+.fa-check-circle {
+  color: white;
 }
+
 .menu__card__title {
   font-weight: normal;
   font-size: 1.1em;

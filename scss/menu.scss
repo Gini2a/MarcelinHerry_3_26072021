@@ -26,16 +26,6 @@
     cursor: pointer;
 }
 
-.btn__check{
-    position: absolute;
-    right: 0;
-    background:$colour-tertiary;
-    padding: 20px;
-    border-radius: 0 15px 15px 0;
-    top: 0;
-    height: 31px;
-    display: none;
-}
 
 body{
     margin: 0;
@@ -118,21 +108,21 @@ a{
     padding-left: 10px;
     margin-bottom: 20px;
     height: 70px;
-        &:hover .btn__check{
-            display: initial;
-            animation : slide 1s ease;
-            transform-origin: right;
-        }
-    
     }
 
-    @keyframes slide{
-        0%{
-            transform: scaleX(0);    
-        }
-        100%{
-            transform: scaleX(-50px);
-        }
+    .btn__check{
+        position: absolute;
+        right: 0;
+        background:$colour-tertiary;
+        padding: 20px;
+        border-radius: 0 15px 15px 0;
+        top: 0;
+        height: 31px;
+        display: none;
+    }
+
+    .fa-check-circle{
+        color: white;
     }
 
 .menu__card__title{
