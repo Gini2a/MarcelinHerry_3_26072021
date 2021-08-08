@@ -259,7 +259,14 @@ a {
     padding-bottom: 0;
   }
 
+  .footer__logo {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
   .footer__navs {
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
     padding: 20px;

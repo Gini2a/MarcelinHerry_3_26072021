@@ -342,6 +342,11 @@ color: white;
     padding: 20px;
 }
 
+.footer__logo{
+    text-align: center;
+    font-size: 1.3em;
+}
+
 
 }
 
@@ -361,6 +366,8 @@ color: white;
        flex-direction: row;
        align-items: center;
        justify-content: space-around;
+       max-width: 1440px;
+       margin: auto;
     }
        
     .restaurants__title{
@@ -389,10 +396,17 @@ color: white;
        top: 255px;
    }
 
+   .footer__logo{
+    text-align: center;
+    font-size: 1.3em;
+}
+
    .footer__navs{
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 }
