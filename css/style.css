@@ -13,7 +13,7 @@
   background-color: #f6f6f6;
   opacity: 0.8;
   z-index: 2;
-  animation: spinner 4s linear;
+  animation: spinner 3s linear;
   animation-fill-mode: forwards;
 }
 
@@ -35,7 +35,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  animation: spinner__element 4s linear;
+  animation: spinner__element 3s linear;
   visibility: hidden;
 }
 
