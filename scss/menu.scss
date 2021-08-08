@@ -76,6 +76,30 @@ a{
             }
 }
 
+.menu__card__dishes{
+animation: menu 1.5s ease-in both;
+&:nth-child(1) {
+    animation-delay: 0s;
+}
+&:nth-child(2) {
+    animation-delay: 0.5s;
+}
+&:nth-child(3) {
+    animation-delay: 1s;
+}
+
+}
+
+@keyframes menu{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 .menu__header__title{
     font-family: 'shrikhand';
     font-weight: normal;
