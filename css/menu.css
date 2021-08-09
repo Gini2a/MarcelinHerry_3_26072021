@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url(/font/Shrikhand-Regular.otf);
+  src: url(../font/Shrikhand-Regular.otf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(/font/Roboto-Regular.ttf);
+  src: url(../font/Roboto-Regular.ttf);
 }
 body {
   margin: 0;
@@ -40,9 +40,9 @@ a {
 
 .menus {
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 10px;
   margin-top: -60px;
-  overflow: overlay;
+  position: relative;
   border-radius: 20px 20px 0 0;
 }
 .menus .menu {
@@ -55,27 +55,114 @@ a {
   margin-bottom: 35px;
 }
 
+.menu__card__dishes {
+  animation: menu 1.5s ease-in-out both;
+}
+.menu__card__dishes:nth-child(1) {
+  animation-delay: 0s;
+}
+.menu__card__dishes:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.menu__card__dishes:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .menu__header__title {
   font-family: "shrikhand";
   font-weight: normal;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  font-size: 1.7em;
 }
 
 .love {
+  padding-left: 10px;
+  padding-right: 25px;
   font-size: 30px;
   cursor: pointer;
+  transition: all 700ms ease-in-out;
+  transform: scale(1);
+  background: #f6f6f6;
+}
+.love:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .menu__card__description {
+  position: relative;
   border: 2px solid #f3f3f3;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 20px;
   padding-left: 10px;
   margin-bottom: 20px;
+  height: 70px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.menu__card__description:hover .menu__card__price {
+  padding-right: 60px;
+}
+.menu__card__description:hover .test {
+  padding-right: 60px;
+}
+.menu__card__description:hover .btn__check {
+  display: initial;
+  animation: slide 0.5s ease;
+  transform-origin: right;
+  cursor: pointer;
+}
+.menu__card__description .btn__check {
+  position: absolute;
+  right: -2px;
+  background: #99E2D0;
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
+  top: 0;
+  height: 32px;
+  display: none;
+}
+.menu__card__description .btn__check .fa-check-circle {
+  color: white;
+  font-size: 25px;
+  animation: rotation 0.5s;
+  padding-top: 5px;
 }
 
+.menu__card__entitled {
+  display: flex;
+}
+
+@keyframes slide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .menu__card__title {
   font-weight: normal;
   font-size: 1.1em;
@@ -86,6 +173,10 @@ a {
 
 .menu__card__dish {
   margin-bottom: 0;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu__card__ingredients {
@@ -93,13 +184,15 @@ a {
   justify-content: space-between;
 }
 .menu__card__ingredients .menu__card__ingredient {
-  display: flex;
   justify-content: space-between;
   margin-top: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__card__ingredients .menu__card__price {
   margin-top: 2px;
-  margin-right: 40px;
+  margin-right: 20px;
   font-weight: bold;
 }
 
@@ -158,7 +251,10 @@ a {
   margin-right: 10px;
 }
 
-.footer__contact {
+.footer__nav {
+  cursor: pointer;
+}
+.footer__nav .footer__contact {
   color: white;
 }
 
@@ -180,18 +276,34 @@ a {
   }
 
   .menu__card {
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
+  }
+  .menu__card .menu__card__dishes {
+    width: 32%;
+  }
+
+  .menu__card__ingredients .menu__card__price {
+    margin-right: 20px;
   }
 
   .menu-order {
     padding-bottom: 0;
   }
 
+  .footer__logo {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
   .footer__navs {
+    max-width: 1440px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
   }
 }
