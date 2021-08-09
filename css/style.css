@@ -11,9 +11,8 @@
   width: 100%;
   height: 100%;
   background-color: #f6f6f6;
-  opacity: 0.8;
   z-index: 2;
-  animation: spinner 3s linear;
+  animation: spinner 4s linear;
   animation-fill-mode: forwards;
 }
 
@@ -35,18 +34,18 @@
   left: 0;
   right: 0;
   bottom: 0;
-  animation: spinner__element 3s linear;
+  animation: spinner__element 4s linear;
   visibility: hidden;
 }
 
 @keyframes spinner {
   0% {
     visibility: visible;
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
   }
 }
 @keyframes spinner__element {
@@ -56,7 +55,7 @@
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
   }
 }
@@ -170,16 +169,19 @@ h3 {
   border: 2px solid transparent;
   border-radius: 20px;
   font-weight: bold;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   background-color: #F6F6F6;
   box-shadow: 0 0 10px;
-  width: 265px;
+  width: 249px;
   margin-right: 20px;
 }
 .method__description:hover {
-  opacity: 0.7;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+  background-color: rgba(147, 86, 220, 0.1);
+  box-shadow: 0px 0px 8px 0px;
   cursor: pointer;
+}
+.method__description:hover .function {
+  color: #9356DC;
 }
 
 .fa-mobile-alt, .fa-list-ul, .fa-store {
@@ -242,11 +244,12 @@ h3 {
 .love {
   position: absolute;
   top: 200px;
-  right: 30px;
+  right: 25px;
   font-size: 30px;
   cursor: pointer;
+  background: transparent;
+  transition: all 700ms ease-in-out;
   transform: scale(1);
-  transition: transform 500ms;
 }
 .love:hover {
   transform: scale(1.1);
@@ -318,6 +321,11 @@ h3 {
     width: 98%;
   }
 
+  .love {
+    padding: 0;
+    right: 40px;
+  }
+
   .footer__navs {
     display: flex;
     justify-content: space-between;
@@ -374,6 +382,8 @@ h3 {
 
   .love {
     top: 255px;
+    padding-right: 0;
+    right: 40px;
   }
 
   .footer__logo {

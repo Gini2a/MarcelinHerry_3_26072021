@@ -93,10 +93,12 @@ animation: menu 1.5s ease-in-out both;
 @keyframes menu{
     0%{
         opacity: 0;
+        transform: translateY(-20px);
     }
 
     100%{
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -110,11 +112,13 @@ animation: menu 1.5s ease-in-out both;
 }
 
 .love{
+    padding-left: 10px;
     padding-right: 25px;
     font-size: 30px;
     cursor: pointer;
-    transition: transform 500ms;
+    transition: all 700ms ease-in-out;
     transform: scale(1);
+    background: #f6f6f6;
     &:hover{
         transform: scale(1.1);
         font-weight: bold;
@@ -123,7 +127,6 @@ animation: menu 1.5s ease-in-out both;
         color:transparent;
     }
 }
-
 
 .menu__card__description{
     position: relative;
@@ -135,6 +138,9 @@ animation: menu 1.5s ease-in-out both;
     height: 70px;
     box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 10%); 
         &:hover .menu__card__price{
+            padding-right: 60px;
+        }
+        &:hover .test{
             padding-right: 60px;
         }
         &:hover .btn__check{
@@ -160,7 +166,10 @@ animation: menu 1.5s ease-in-out both;
             }
         }
     }
-    
+
+    .menu__card__entitled{
+        display: flex;
+    }
 
     @keyframes slide{
         0%{
@@ -191,6 +200,9 @@ animation: menu 1.5s ease-in-out both;
 .menu__card__dish{
     margin-bottom: 0;
     margin-top: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .menu__card__ingredients{
