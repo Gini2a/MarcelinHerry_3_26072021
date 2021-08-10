@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url(../font/Shrikhand-Regular.otf);
+  src: url(/font/Shrikhand-Regular.otf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(../font/Roboto-Regular.ttf);
+  src: url(/font/Roboto-Regular.ttf);
 }
 .spinner {
   position: fixed;
@@ -87,7 +87,7 @@ h3 {
   padding-bottom: 20px;
   margin-bottom: 0;
   padding-top: 20px;
-  border-top: 2px solid transparent;
+  border-top: 2px solid #eaeaea;
   box-shadow: 0px 0 10px #9e9e9e;
 }
 
@@ -162,7 +162,6 @@ h3 {
   top: 34px;
   height: 18px;
   left: 13px;
-  z-index: 1;
 }
 
 .method__description {
@@ -279,10 +278,7 @@ h3 {
   margin-right: 10px;
 }
 
-.footer__nav {
-  cursor: pointer;
-}
-.footer__nav .footer__contact {
+.footer__contact {
   color: white;
 }
 
@@ -321,20 +317,10 @@ h3 {
     width: 98%;
   }
 
-  .love {
-    padding: 0;
-    right: 40px;
-  }
-
   .footer__navs {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-  }
-
-  .footer__logo {
-    text-align: center;
-    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1069px) {
@@ -353,8 +339,6 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    max-width: 1440px;
-    margin: auto;
   }
 
   .restaurants__title {
@@ -382,21 +366,12 @@ h3 {
 
   .love {
     top: 255px;
-    padding-right: 0;
-    right: 40px;
-  }
-
-  .footer__logo {
-    text-align: center;
-    font-size: 1.3em;
   }
 
   .footer__navs {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 20px;
-    max-width: 1440px;
-    margin: auto;
   }
 }
 

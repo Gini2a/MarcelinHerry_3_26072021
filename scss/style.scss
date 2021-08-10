@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Shrikhand';
-    src: url(../font/Shrikhand-Regular.otf);
+    src: url(/font/Shrikhand-Regular.otf);
 }
 
 @font-face {
     font-family: 'roboto';
-    src:url(../font/Roboto-Regular.ttf)
+    src:url(/font/Roboto-Regular.ttf)
 }
 
 @mixin btn {
@@ -46,6 +46,7 @@
     border-bottom: 10px solid $colour-secondary;
     border-left: 10px solid $colour-tertiary;
     border-right: 10px solid $colour-tertiary;
+
     border-radius: 50%;
     width: 125px;
     height: 125px;
@@ -63,7 +64,7 @@
     0%{
         visibility: visible;
         opacity: 1;
-    }   
+    }
     100%{
         visibility: hidden;
         opacity: 1;
@@ -112,7 +113,7 @@ h3{
         padding-bottom: 20px;
         margin-bottom: 0;
         padding-top: 20px;
-        border-top: 2px solid transparent;
+        border-top: 2px solid #eaeaea;
         box-shadow: 0px 0 10px #9e9e9e;
     }
 }
@@ -181,7 +182,6 @@ h3{
     top: 34px;
     height: 18px;
     left: 13px;
-    z-index: 1;
 }
 
 .method__description{
@@ -194,14 +194,13 @@ h3{
     width: 249px;
     margin-right: 20px;
     &:hover{
-
         background-color: rgba(147,86,220,0.1);
         box-shadow :  0px  0px  8px  0px;
         cursor: pointer;
     .function{
         color: $colour-primary;
     }
-    }
+}
 }
 
 .fa-mobile-alt, .fa-list-ul, .fa-store{
@@ -262,7 +261,6 @@ h3{
 }
  
 .love{
-
     position: absolute;
     top:200px;
     right: 25px;
@@ -299,11 +297,9 @@ color: white;
 .fa-utensils, .fa-hands-helping{
     margin-right: 10px;
 }
-.footer__nav{
-    cursor: pointer;
-    .footer__contact{
+
+.footer__contact{
     color: white;
-    }
 }
 
 @media screen and (min-width:800px)and (max-width: 1068px){
@@ -342,20 +338,10 @@ color: white;
     width: 98%;
 }
 
-.love{
-    padding: 0;
-    right: 40px;
-}
-
 .footer__navs{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-}
-
-.footer__logo{
-    text-align: center;
-    font-size: 1.3em;
 }
 
 
@@ -377,8 +363,6 @@ color: white;
        flex-direction: row;
        align-items: center;
        justify-content: space-around;
-       max-width: 1440px;
-       margin: auto;
     }
        
     .restaurants__title{
@@ -405,21 +389,12 @@ color: white;
    }
    .love{
        top: 255px;
-       padding-right:0;
-       right: 40px;
    }
-
-   .footer__logo{
-    text-align: center;
-    font-size: 1.3em;
-}
 
    .footer__navs{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 20px;
-    max-width: 1440px;
-    margin: auto;
 }
 
 }
