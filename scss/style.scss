@@ -265,16 +265,29 @@ h3{
     top:200px;
     right: 25px;
     font-size: 30px;
-    cursor: pointer;
-    background: transparent;
-    transition: all 700ms ease-in-out;
-    transform: scale(1);
+    cursor: pointer;  
+}
+
+.love2{
+    font-size: 30px;
+    position: absolute;
+    top: 200px;
+    right: 25px;
     &:hover{
+        transition: transform 2s ease-in-out;
         transform: scale(1.1);
+        cursor: pointer;
+        animation: coeur 2s both;
         font-weight: bold;
         background: $gradient;
         -webkit-background-clip:text;
         color:transparent;
+    }
+}
+@keyframes coeur{
+    0%{opacity: 0;
+    }
+    100%{opacity:1;
     }
 }
 
@@ -388,6 +401,10 @@ color: white;
        }
    }
    .love{
+       top: 255px;
+   }
+
+   .love2{
        top: 255px;
    }
 

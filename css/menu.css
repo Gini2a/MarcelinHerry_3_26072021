@@ -71,7 +71,7 @@ a {
 @keyframes menu {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
@@ -88,22 +88,38 @@ a {
 }
 
 .love {
-  padding-left: 10px;
-  padding-right: 25px;
+  right: 20px;
+  position: relative;
   font-size: 30px;
   cursor: pointer;
-  transition: all 700ms ease-in-out;
-  transform: scale(1);
   background: #f6f6f6;
 }
-.love:hover {
+
+.love2 {
+  right: 30px;
+  position: absolute;
+  font-size: 30px;
+  transform: scale(1);
+}
+.love2:hover {
+  transition: transform 2s ease-in-out;
   transform: scale(1.1);
+  cursor: pointer;
+  animation: coeur 2s both;
   font-weight: bold;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
 }
 
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu__card__description {
   position: relative;
   border: 2px solid #f3f3f3;
@@ -271,8 +287,15 @@ a {
     justify-content: center;
   }
 
-  .fa-heart {
-    margin-left: 20px;
+  .love {
+    right: 0;
+    left: 50px;
+  }
+
+  .love2 {
+    position: relative;
+    right: 0;
+    left: 80px;
   }
 
   .menu__card {

@@ -246,18 +246,33 @@ h3 {
   right: 25px;
   font-size: 30px;
   cursor: pointer;
-  background: transparent;
-  transition: all 700ms ease-in-out;
-  transform: scale(1);
 }
-.love:hover {
+
+.love2 {
+  font-size: 30px;
+  position: absolute;
+  top: 200px;
+  right: 25px;
+}
+.love2:hover {
+  transition: transform 2s ease-in-out;
   transform: scale(1.1);
+  cursor: pointer;
+  animation: coeur 2s both;
   font-weight: bold;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
 }
 
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .footer {
   padding-bottom: 40px;
   padding-left: 20px;
@@ -365,6 +380,10 @@ h3 {
   }
 
   .love {
+    top: 255px;
+  }
+
+  .love2 {
     top: 255px;
   }
 
