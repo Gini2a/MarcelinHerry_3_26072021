@@ -37,6 +37,9 @@ a{
     color: black;
 }
 
+h3{
+    font-weight: lighter;}
+
 .header{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -267,10 +270,6 @@ animation: menu 1.5s ease-in-out both;
     padding-top: 20px;
     color: white;
     background-color: black;
-}
-
-.footer__logo h3{
-    font-weight: lighter;
 }
 
 .footer__logo{

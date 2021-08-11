@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "roboto";
-  src: url(..font/Roboto-Regular.ttf);
+  src: url(../font/Roboto-Regular.ttf);
 }
 .spinner {
   position: fixed;
